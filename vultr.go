@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/JamesClonk/vultr/cmd"
+	"github.com/chris-tn/vultr/cmd"
 )
 
 func main() {
