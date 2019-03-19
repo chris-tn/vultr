@@ -363,7 +363,7 @@ func serversList(cmd *cli.Cmd) {
 		lengths := []int{12, 16, 24, 32, 32, 32, 8, 8, 24, 16, 8}
 		tabsPrint(columns{
 			"SUBID",
-			"STATUS",
+			"PowerStatus",
 			"IP",
 			"NAME",
 			"OS",
@@ -376,7 +376,7 @@ func serversList(cmd *cli.Cmd) {
 		for _, server := range servers {
 			tabsPrint(columns{
 				server.ID,
-				server.Status,
+				server.PowerStatus,
 				server.MainIP,
 				server.Name,
 				server.OS,
